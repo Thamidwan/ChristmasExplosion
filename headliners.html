@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeadLiners</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        
+        .button-container {
+    margin-top: 40px; /* Adjusted margin for space at the top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container a {
+    color: white;
+    background-color: #ff66b2;
+    padding: 15px 15px;
+    border-color: #ff66b2;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-bottom: 10px; /* Adjusted margin at the bottom of the button */
+} 
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Responsive styles for social media icons */
+@media (max-width: 768px) {
+    .social-icons {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .social-icons a {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+
+        .footer {
+            background-color: #ff66b2;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer h3 {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            font-size: 12px;
+        }
+
+        nav {
+            background-color: #ff66b2;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            font-size: 18px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ffb6c1;
+        }
+
+        .countdown-container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #8B8000;
+        }
+
+        h2 {
+            color: #FFEA00;
+        }
+
+        .countdown {
+            font-size: 24px;
+            color: #333;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .countdown-unit {
+            font-size: 32px;
+            color: #ff66b2;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            max-width: 80px;
+        }
+
+        .countdown-label {
+            margin-top: 5px;
+        }
+
+        /* Responsive Video Styles */
+        .responsive-video {
+            width: 60%;
+            height: auto;
+        }
+
+        /* Responsive Paragraph Styles */
+        .responsive-paragraph {
+            max-width: 800px;
+            margin: 20px auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .countdown {
+                flex-direction: column;
+            }
+
+            .countdown-unit {
+                margin: 10px 0;
+            }
+
+            .footer {
+                flex-direction: column;
+            }
+
+            /* Adjust video size for smaller screens */
+            .responsive-video {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="headliners.html">LineUp</a>
+            
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </nav>
+
+    <div class="countdown-container">
+        <h1>Headliners</h1>
+        <!-- Responsive Video -->
+       <video class="responsive-video" controls autoplay>
+       <source src="./images/vid.mp4" type="video/mp4">
+       <source src="./images/vid.ogg" type="video/ogg">
+       Your browser does not support the video tag.
+       </video>
+         <h1>Featuring</h1>
+        <!-- Responsive Paragraph -->
+        <p class="responsive-paragraph">
+            Kingsley,Jazzyanos,Tlhogi Da Deejay,Poto,Gee P,Dipepa Dipepa,Jezla,
+            Guev'la G , Connie D,Pedabotic , Tso & Tronik.
+        </p>
+
+         <h1>MC'S</h1>
+        <!-- Responsive Paragraph -->
+        <p class="responsive-paragraph">
+          SFAMZA, LADY P, FUGGLY MAMMIE,BILLY BLANCS
+        </p>
+
+        <h1>Countdown to Explosion 2023</h1>
+        <div id="countdown" class="countdown">
+            <div class="countdown-unit" id="days"></div>
+            <div class="countdown-label">Days</div>
+
+            <div class="countdown-unit" id="hours"></div>
+            <div class="countdown-label">Hours</div>
+
+            <div class="countdown-unit" id="minutes"></div>
+            <div class="countdown-label">Minutes</div>
+
+            <div class="countdown-unit" id="seconds"></div>
+            <div class="countdown-label">Seconds</div>
+        </div>
+
+        <div class="button-container">
+    <a href="https://www.webtickets.co.za/v2/event.aspx?itemid=1536377807" class="countdown-button">Get Your Ticket</a>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/search/top?q=christmas%20explosion" class="fa fa-facebook"></a>
+       <a href="https://www.tiktok.com/@christmasexplosion_" class="fa fa-tumblr"></a>
+        <a href="https://www.instagram.com/christmasexplosion_/?hl=en" class="fa fa-instagram"></a>
+        <!-- Add more social media icons as needed -->
+    </div>
+    
+    </div>
+
+    <footer class="footer">
+        <h3>Designed by Thami Dwane</h3>
+    </footer>
+
+    <script>
+        // Set the date we're counting down to
+        const countDownDate = new Date("Dec 25, 2023 12:00:00").getTime();
+
+        // Update the countdown every 1 second
+        const x = setInterval(function() {
+            // Get the current date and time
+            const now = new Date().getTime();
+
+            // Calculate the remaining time
+            const distance = countDownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // If the countdown is over, display a message
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "Merry Christmas!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
